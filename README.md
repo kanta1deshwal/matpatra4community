@@ -23,5 +23,3 @@ This project automates login functionality for a web application using **Seleniu
 ## 📂 Test Data
 
 All test data is stored in an external Excel file and read dynamically to validate different login conditions.
-
-> 🚀 Feel free to clone the repo, add your own test cases, and contribute!
