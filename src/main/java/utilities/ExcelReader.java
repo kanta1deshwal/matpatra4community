@@ -61,7 +61,9 @@ public class ExcelReader{
 		else{
 		sheet = workbook.getSheetAt(index);
 		int number=sheet.getLastRowNum()+1;
+		System.out.println(number);
 		return number;
+		
 		}
 		
 	}
@@ -106,7 +108,6 @@ public class ExcelReader{
 			  if (DateUtil.isCellDateFormatted(cell)) {
 		           
 				  double d = cell.getNumericCellValue();
-
 				  Calendar cal =Calendar.getInstance();
 				  cal.setTime(DateUtil.getJavaDate(d));
 		         String   cellText = (String.valueOf(cal.get(Calendar.YEAR))).substring(2);
@@ -122,9 +123,7 @@ public class ExcelReader{
 	                    return String.valueOf(numericValue); // For non-integer values
 	                }
 	            } 
-
 		         
-
 			  
 			  
 			
@@ -152,7 +151,6 @@ public class ExcelReader{
 				return "";
 		
 		int index = workbook.getSheetIndex(sheetName);
-
 		if(index==-1)
 			return "";
 		
@@ -173,7 +171,6 @@ public class ExcelReader{
 		  if (DateUtil.isCellDateFormatted(cell)) {
 	           // format in form of M/D/YY
 			  double d = cell.getNumericCellValue();
-
 			  Calendar cal =Calendar.getInstance();
 			  cal.setTime(DateUtil.getJavaDate(d));
 	         String   cellText = (String.valueOf(cal.get(Calendar.YEAR))).substring(2);
@@ -197,7 +194,7 @@ public class ExcelReader{
 		  
 	  }else if(cell.getCellType()==CellType.BLANK)
 	  {
-		  return null;
+		  return "";
 	  }
 	  else 
 		  return String.valueOf(cell.getBooleanCellValue());
@@ -217,7 +214,6 @@ public class ExcelReader{
 		try{
 		fis = new FileInputStream(path); 
 		workbook = WorkbookFactory.create(fis);
-
 		if(rowNum<=0)
 			return false;
 		
@@ -229,7 +225,6 @@ public class ExcelReader{
 		
 		sheet = workbook.getSheetAt(index);
 		
-
 		row=sheet.getRow(0);
 		for(int i=0;i<row.getLastCellNum();i++){
 			//System.out.println(row.getCell(i).getStringCellValue().trim());
@@ -238,7 +233,6 @@ public class ExcelReader{
 		}
 		if(colNum==-1)
 			return false;
-
 		sheet.autoSizeColumn(colNum); 
 		row = sheet.getRow(rowNum-1);
 		if (row == null)
@@ -247,16 +241,11 @@ public class ExcelReader{
 		cell = row.getCell(colNum);	
 		if (cell == null)
 	        cell = row.createCell(colNum);
-
 	    
 	    cell.setCellValue(data);
-
 	    fileOut = new FileOutputStream(path);
-
 		workbook.write(fileOut);
-
 	    fileOut.close();	
-
 		}
 		catch(Exception e){
 			e.printStackTrace();
@@ -273,7 +262,6 @@ public class ExcelReader{
 		try{
 		fis = new FileInputStream(path); 
 		workbook = WorkbookFactory.create(fis);
-
 		if(rowNum<=0)
 			return false;
 		
@@ -305,7 +293,6 @@ public class ExcelReader{
 			
 	    cell.setCellValue(data);
 	    CreationHelper createHelper = workbook.getCreationHelper();
-
 	    //cell style for hyperlinks
 	    
 	    CellStyle hlink_style = workbook.createCellStyle();
@@ -314,7 +301,6 @@ public class ExcelReader{
 	    hlink_font.setColor(IndexedColors.BLUE.getIndex());
 	    hlink_style.setFont(hlink_font);
 	    //hlink_style.setWrapText(true);
-
 	    Hyperlink link = createHelper.createHyperlink(HyperlinkType.FILE);
 	    link.setAddress(url);
 	    cell.setHyperlink(link);
@@ -322,9 +308,7 @@ public class ExcelReader{
 	      
 	    fileOut = new FileOutputStream(path);
 		workbook.write(fileOut);
-
 	    fileOut.close();	
-
 		}
 		catch(Exception e){
 			e.printStackTrace();
@@ -402,7 +386,6 @@ public class ExcelReader{
 	        fileOut = new FileOutputStream(path);
 			workbook.write(fileOut);
 		    fileOut.close();		    
-
 		}catch(Exception e){
 			e.printStackTrace();
 			return false;
@@ -468,8 +451,6 @@ public class ExcelReader{
 	    		break;
 	    	}
 	    }
-
-
 		return true; 
 	}
 	public int getCellRowNum(String sheetName,String colName,String cellValue){

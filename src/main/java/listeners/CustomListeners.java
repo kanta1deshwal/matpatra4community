@@ -15,7 +15,7 @@ public class CustomListeners implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-ITestListener.super.onTestFailure(result);
+       ITestListener.super.onTestFailure(result);
 		
 		try {
 			TestUtil.captureScreenShot();
@@ -23,14 +23,16 @@ ITestListener.super.onTestFailure(result);
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		 System.out.println("Screenshot File Path: " + TestUtil.fileName);
-		 
-	
-		 Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.fileName + ".jpg\">Screenshot Link</a>");
-		 Reporter.log("<br>");
-		 Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.fileName + "> <img src=\"" + TestUtil.fileName + " height=\"100\" width=\"100\"></a>");
-	}
+		System.out.println("Screenshot File Path: " + TestUtil.fileName);
 
+		// Screenshot Link (Text)
+		Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.fileName + "\">Screenshot Link</a>");
+		Reporter.log("<br>");
+
+		// Screenshot Thumbnail
+		Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.fileName + "\">"
+		            + "<img src=\"" + TestUtil.fileName + "\" height=\"200\" width=\"200\"></a>");
+	}
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -43,21 +45,21 @@ ITestListener.super.onTestFailure(result);
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		 System.out.println("Screenshot File Path: " + TestUtil.fileName);
-		 
-	
-		 Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.fileName + ".jpg\">Screenshot Link</a>");
-		 Reporter.log("<br>");
-		 Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.fileName + ".jpg\"> <img src=\"" + TestUtil.fileName + ".jpg\" height=\"100\" width=\"100\"></a>");
-		
+		System.out.println("Screenshot File Path: " + TestUtil.fileName);
+
+		// Screenshot Link (Text)
+		Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.fileName + "\">Screenshot Link</a>");
+		Reporter.log("<br>");
+
+		// Screenshot Thumbnail
+		Reporter.log("<a target=\"_blank\" href=\"" + TestUtil.fileName + "\">"
+		            + "<img src=\"" + TestUtil.fileName + "\" height=\"200\" width=\"200\"></a>");
+
 		
 	}
 	@Override
 	public void onTestSkipped(ITestResult result) {
-
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestSkipped(result);
-
 	}
-
 }

@@ -1,69 +1,25 @@
-INFO    2024-10-07 11:31:15,595 [main] base.BasePage  - Config file loaded
-INFO    2024-10-07 11:31:15,611 [main] base.BasePage  - OR file loaded
-INFO    2024-10-07 11:31:19,298 [main] base.BasePage  - Chrome launched
-INFO    2024-10-07 11:31:22,669 [main] base.BasePage  - Clicking on an element :via_OTP_xpath
-INFO    2024-10-07 11:31:22,794 [main] base.BasePage  - Typing in an element :mobileNoField_idhaving value9015214613
-INFO    2024-10-07 11:31:22,883 [main] base.BasePage  - Clicking on an element :sendOTPButton_xpath
-INFO    2024-10-07 11:31:23,044 [main] base.BasePage  - Finding the element :OtpPage_xpath
-INFO    2024-10-07 11:31:23,044 [main] base.BasePage  - OTP Page appeared for primary member.
-INFO    2024-10-07 11:31:28,183 [main] base.BasePage  - Typing in an element :otpField_idhaving value803221
-INFO    2024-10-07 11:31:28,249 [main] base.BasePage  - Clicking on an element :verifyButton_xpath
-INFO    2024-10-07 11:31:33,297 [main] base.BasePage  - Error while finding the element : web_hello_text_xpathexception message :no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Hello,']"}
-  (Session info: chrome=129.0.6668.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c38014f7ab12eeb429c98148f0e444f8, findElement {using=xpath, value=//h2[text()='Hello,']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54203}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54203/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c38014f7ab12eeb429c98148f0e444f8
-INFO    2024-10-07 11:31:33,297 [main] base.BasePage  - Invalid OTP entered, timeline did not appear. TestCase Failed.
-INFO    2024-10-07 11:31:40,433 [main] base.BasePage  - Clicking on an element :via_OTP_xpath
-INFO    2024-10-07 11:31:40,547 [main] base.BasePage  - Typing in an element :mobileNoField_idhaving value7027440090
-INFO    2024-10-07 11:31:40,605 [main] base.BasePage  - Clicking on an element :sendOTPButton_xpath
-INFO    2024-10-07 11:31:40,740 [main] base.BasePage  - Finding the element :OtpPage_xpath
-INFO    2024-10-07 11:31:40,740 [main] base.BasePage  - OTP Page appeared for primary member.
-INFO    2024-10-07 11:31:45,868 [main] base.BasePage  - Typing in an element :otpField_idhaving value612242
-INFO    2024-10-07 11:31:45,917 [main] base.BasePage  - Clicking on an element :verifyButton_xpath
-INFO    2024-10-07 11:31:50,984 [main] base.BasePage  - Error while finding the element : web_hello_text_xpathexception message :no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Hello,']"}
-  (Session info: chrome=129.0.6668.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c38014f7ab12eeb429c98148f0e444f8, findElement {using=xpath, value=//h2[text()='Hello,']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54203}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54203/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c38014f7ab12eeb429c98148f0e444f8
-INFO    2024-10-07 11:31:50,984 [main] base.BasePage  - Invalid OTP entered, timeline did not appear. TestCase Failed.
-INFO    2024-10-07 11:31:58,233 [main] base.BasePage  - Clicking on an element :via_OTP_xpath
-INFO    2024-10-07 11:31:58,343 [main] base.BasePage  - Typing in an element :mobileNoField_idhaving value7027440095
-INFO    2024-10-07 11:31:58,396 [main] base.BasePage  - Clicking on an element :sendOTPButton_xpath
-INFO    2024-10-07 11:31:58,396 [main] base.BasePage  - User is not a member.
-INFO    2024-10-07 11:32:03,457 [main] base.BasePage  - Error while finding the element : OtpPage_xpathexception message :no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()="Enter the OTP sent to "]"}
-  (Session info: chrome=129.0.6668.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c38014f7ab12eeb429c98148f0e444f8, findElement {using=xpath, value=//p[text()="Enter the OTP sent to "]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54203}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54203/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c38014f7ab12eeb429c98148f0e444f8
-INFO    2024-10-07 11:32:03,457 [main] base.BasePage  - Testcase PASSED: OTP Page did not appear for non-member.
-INFO    2024-10-07 11:32:10,795 [main] base.BasePage  - Clicking on an element :via_OTP_xpath
-INFO    2024-10-07 11:32:10,901 [main] base.BasePage  - Typing in an element :mobileNoField_idhaving value9015214613
-INFO    2024-10-07 11:32:10,955 [main] base.BasePage  - Clicking on an element :sendOTPButton_xpath
-INFO    2024-10-07 11:32:11,096 [main] base.BasePage  - Finding the element :OtpPage_xpath
-INFO    2024-10-07 11:32:11,096 [main] base.BasePage  - OTP Page appeared for primary member.
-INFO    2024-10-07 11:32:16,144 [main] base.BasePage  - Duplicate user detected, using incorrect OTP: 000000
-INFO    2024-10-07 11:32:16,233 [main] base.BasePage  - Typing in an element :otpField_idhaving value000000
-INFO    2024-10-07 11:32:16,274 [main] base.BasePage  - Clicking on an element :verifyButton_xpath
-INFO    2024-10-07 11:32:21,286 [main] base.BasePage  - Error while finding the element : web_hello_text_xpathexception message :no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Hello,']"}
-  (Session info: chrome=129.0.6668.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c38014f7ab12eeb429c98148f0e444f8, findElement {using=xpath, value=//h2[text()='Hello,']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54203}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54203/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c38014f7ab12eeb429c98148f0e444f8
-INFO    2024-10-07 11:32:21,286 [main] base.BasePage  - Invalid OTP entered, timeline did not appear. TestCase Failed.
+INFO    2025-03-13 15:59:12,676 [main] base.BasePage  - Config file loaded
+INFO    2025-03-13 15:59:12,677 [main] base.BasePage  - OR file loaded
+INFO    2025-03-13 15:59:14,727 [main] base.BasePage  - Chrome launched
+INFO    2025-03-13 15:59:17,234 [main] base.BasePage  - Received value for username_id: 7027440090
+INFO    2025-03-13 15:59:18,684 [main] base.BasePage  - Typing in an element: username_id having value: 7027440090
+INFO    2025-03-13 15:59:18,684 [main] base.BasePage  - Received value for password_id: Vikas@122
+INFO    2025-03-13 15:59:18,806 [main] base.BasePage  - Typing in an element: password_id having value: Vikas@122
+INFO    2025-03-13 15:59:18,906 [main] base.BasePage  - Clicking on an element :sign_in_xpath
+INFO    2025-03-13 15:59:19,142 [main] base.BasePage  - Invalid login error message is correct: Invalid registered mobile number or userName
+INFO    2025-03-13 15:59:24,542 [main] base.BasePage  - Received value for username_id: 
+INFO    2025-03-13 15:59:25,688 [main] base.BasePage  - Typing in an element: username_id having value: 
+INFO    2025-03-13 15:59:25,688 [main] base.BasePage  - Received value for password_id: Vikas@133
+INFO    2025-03-13 15:59:25,808 [main] base.BasePage  - Typing in an element: password_id having value: Vikas@133
+INFO    2025-03-13 15:59:25,889 [main] base.BasePage  - Clicking on an element :sign_in_xpath
+INFO    2025-03-13 15:59:31,022 [main] base.BasePage  - Username error message is correct: User Name or Mobile is required
+INFO    2025-03-13 15:59:37,488 [main] base.BasePage  - Clicking on an element :sign_in_xpath
+INFO    2025-03-13 15:59:37,578 [main] base.BasePage  - Both username and password error messages are correct.
+INFO    2025-03-13 15:59:42,907 [main] base.BasePage  - Received value for username_id: 7027440090
+INFO    2025-03-13 15:59:44,049 [main] base.BasePage  - Typing in an element: username_id having value: 7027440090
+INFO    2025-03-13 15:59:44,049 [main] base.BasePage  - Received value for password_id: Vikas@123
+INFO    2025-03-13 15:59:44,163 [main] base.BasePage  - Typing in an element: password_id having value: Vikas@123
+INFO    2025-03-13 15:59:44,219 [main] base.BasePage  - Clicking on an element :sign_in_xpath
+INFO    2025-03-13 15:59:45,210 [main] base.BasePage  - Finding the element :web_hi_text_xpath
+INFO    2025-03-13 15:59:45,419 [main] base.BasePage  - Finding the element :web_hi_text_xpath
+INFO    2025-03-13 15:59:45,419 [main] base.BasePage  - Timeline displayed
